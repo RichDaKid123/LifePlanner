@@ -7,6 +7,7 @@ import { Goal } from '../types/';
 import { Link } from "react-router-dom";
 
 const LifePathPlannerPage: React.FC = () => {
+  console.log('LifePlannerPage component rendering');
   const { goals, addGoal } = useGoalStore();
 
   const handleGoalSubmit = (goalData: Omit<Goal, 'id' | 'milestones' | 'completed' | 'notes'>) => {
